@@ -7,9 +7,8 @@ export const NewsBoard = ({category}) => {
    
   const [articles, setArticles] = useState([]);
   useEffect(() => {
-    const apiKey = process.env.REACT_APP_KEY_API;
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apiKey}`;
-    
+        const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=6804663d9dd242dba35ddc87cce489fc
+`;    
     fetch(url)
       .then((response) => {
         if (!response.ok) {
